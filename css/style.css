@@ -1,0 +1,24 @@
+.transform{
+	margin:100 auto;
+	transform-origin:center bottom;
+	-ms-transform-origin:center bottom; /* IE 9 */
+	-webkit-transform-origin:center bottom; /* Safari and Chrome */
+}
+.stable{
+	margin:100 auto;
+}
+.secondhand {
+	width: 5px;
+	height: 100px;
+	background-color: red;
+}
+.minutehand{
+	width: 8px;
+	height: 100px;
+	background-color: green;
+}
+.hourhand {
+	width: 12px;
+	height: 100px;
+	background-color: black;
+}
