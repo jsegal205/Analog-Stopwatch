@@ -31,7 +31,14 @@
 	});
 
 	$('#reset').bind('click', function(){
-
+		$('#stop').addClass('disabled');
+		$('#start').removeClass('disabled');
+		_running = false;
+		_second = _zero;
+		_minute = _zero;
+		_hourdeg = _zero;
+		_hourlbl = _zero;
+		rotate(_zero);
 		//reset this shit.	
 
 	});
@@ -49,11 +56,11 @@
 	function rotate(deg){
 		if (_second === _fullCircle){
 			_second = _zero;	
-			_minute += _degToRotate;
+			_minute += deg;
 		} 
 		if (_minute === _fullCircle){
 			_minute = _zero;
-			_hourdeg += _degToRotate*5;
+			_hourdeg += deg*5;
 			_hourlbl += 1;
 		}
 		if (_hourdeg === _fullCircle){
