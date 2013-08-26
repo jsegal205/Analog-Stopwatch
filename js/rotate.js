@@ -61,7 +61,7 @@
 		} 
 		if (_minute === _fullCircle){
 			_minute = _zero;
-			_hourdeg += deg*5;
+			_hourdeg += deg;
 			_hourlbl += 1;
 		}
 		if (_hourdeg === _fullCircle){
