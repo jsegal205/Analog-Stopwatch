@@ -41,7 +41,7 @@
 			setTimeout(function(){
 				rotate(_degToRotate);
 				second();
-			}, 5);	
+			}, 10);	
 			_second += _degToRotate;
 		}
 	};
