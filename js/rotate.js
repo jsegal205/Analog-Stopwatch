@@ -15,32 +15,33 @@
 	var $second = $('#second');
 	var $minute = $('#minute');
 	var $hour = $('#hour');
+	var $start = $('#start');
+	var $stop = $('#stop');
 
-	$('#start').bind('click', function(){
+	$start.bind('click', function(){
 		_running = true;
-		$('#start').addClass('disabled');
-		$('#stop').removeClass('disabled');
+		$start.addClass('disabled');
+		$stop.removeClass('disabled');
 		second();
 	});
 
-	$('#stop').bind('click', function(){
+	$stop.bind('click', function(){
 		_running = false;
-		$('#stop').addClass('disabled');
-		$('#start').removeClass('disabled');
+		$stop.addClass('disabled');
+		$start.removeClass('disabled');
 		second();
 	});
 
 	$('#reset').bind('click', function(){
-		$('#stop').addClass('disabled');
-		$('#start').removeClass('disabled');
+		// reset this shit
+		$stop.addClass('disabled');
+		$start.removeClass('disabled');
 		_running = false;
 		_second = _zero;
 		_minute = _zero;
 		_hourdeg = _zero;
 		_hourlbl = _zero;
 		rotate(_zero);
-		//reset this shit.	
-
 	});
 		
 	function second(){
