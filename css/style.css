@@ -7,9 +7,6 @@ body{
 	-ms-transform-origin:center bottom; /* IE 9 */
 	-webkit-transform-origin:center bottom; /* Safari and Chrome */
 }
-.stable{
-	margin:100 auto;
-}
 .secondhand {
 	width: 5px;
 	height: 100px;
