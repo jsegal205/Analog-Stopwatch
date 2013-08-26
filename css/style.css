@@ -1,3 +1,6 @@
+body{
+	font-family: sans-serif;
+}
 .transform{
 	margin:100 auto;
 	transform-origin:center bottom;
@@ -24,4 +27,18 @@
 }
 .disabled{
 	display:none;
+}
+.btn{
+	background-color: blue;
+	color: white;
+	font-size: 2em;
+	padding: 3px;
+	margin: 3px;
+	text-decoration: none;
+}
+.btnStart{
+	background-color: green;
+}
+.btnStop{
+	background-color: red;
 }
