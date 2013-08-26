@@ -8,7 +8,6 @@
 	var _hourdeg = _zero;
 	var _hourlbl = _zero;
 	var _running = false;
-	var _started = false;
 
 	var $secondhand = $('.secondhand');
 	var $minutehand = $('.minutehand');
@@ -19,11 +18,15 @@
 
 	$('#start').bind('click', function(){
 		_running = true;
+		$('#start').addClass('disabled');
+		$('#stop').removeClass('disabled');
 		second();
 	});
 
 	$('#stop').bind('click', function(){
 		_running = false;
+		$('#stop').addClass('disabled');
+		$('#start').removeClass('disabled');
 		second();
 	});
 
