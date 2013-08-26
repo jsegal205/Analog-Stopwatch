@@ -39,3 +39,6 @@ body{
 .btnStop{
 	background-color: red;
 }
+.largeFont{
+	font-size: 3em;
+}
